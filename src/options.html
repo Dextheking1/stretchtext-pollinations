@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Stretchtext options</title>
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+  <h1>Stretchtext options</h1>
+  <p class="muted">Stretchtext is powered by <a href="https://pollinations.ai" target="_blank" rel="noopener">Pollinations</a>. Expansions run on your own Pollen, with the key you connect here.</p>
+
+  <h2>Connection</h2>
+  <p>Status: <span class="status" id="connState">checking...</span></p>
+  <div class="row">
+    <button id="connectBtn">Connect with Pollinations</button>
+    <button class="secondary" id="disconnectBtn">Disconnect</button>
+  </div>
+  <div id="deviceBox" hidden>
+    <p>Open this page and approve the connection:</p>
+    <p><a id="deviceLink" href="#" target="_blank" rel="noopener">Open the Pollinations device page</a></p>
+    <p>Code: <code id="deviceCode"></code></p>
+    <p class="muted" id="deviceStatus">Waiting for approval...</p>
+  </div>
+  <p class="muted">Sign-in uses the Pollinations device flow. The key you approve is stored only in this browser (chrome.storage.local), nowhere else. It is a normal Pollinations API key: you can revoke it any time from your Pollinations dashboard.</p>
+
+  <h2>Or paste a key</h2>
+  <input type="password" id="keyInput" placeholder="sk_..." autocomplete="off">
+  <div class="row">
+    <button class="secondary" id="saveKeyBtn">Save key</button>
+  </div>
+
+  <h2>Model</h2>
+  <select id="modelSelect"></select>
+  <label class="muted" for="customModel">Custom model id (optional, wins over the list):</label>
+  <input type="text" id="customModel" placeholder="provider/model">
+  <div class="row">
+    <button class="secondary" id="saveModelBtn">Save model</button>
+    <span class="muted" id="modelSaved"></span>
+  </div>
+
+  <h2>Sites where Stretchtext stays off</h2>
+  <ul class="hosts" id="hostList"></ul>
+  <input type="text" id="hostInput" placeholder="example.com">
+  <div class="row">
+    <button class="secondary" id="addHostBtn">Add site</button>
+  </div>
+
+  <h2>Privacy</h2>
+  <p class="muted">No tracking, no analytics. The extension only talks to gen.pollinations.ai (the sentence you click, its paragraph, and your key) and enter.pollinations.ai (during sign-in). Page content is never sent anywhere else, and nothing is logged.</p>
+
+  <script src="options.js"></script>
+</body>
+</html>

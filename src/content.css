@@ -1,0 +1,46 @@
+/* Stretchtext in-page styles. Kept subtle on purpose: a dotted underline is
+   the only mark on the page until a sentence is stretched. */
+
+.stx-seg {
+  border-bottom: 1px dotted rgba(91, 75, 214, 0.65);
+  cursor: pointer;
+}
+
+.stx-seg:hover {
+  background: rgba(91, 75, 214, 0.08);
+}
+
+.stx-seg.stx-expanded {
+  background: rgba(255, 224, 130, 0.28);
+  border-bottom: 1px solid rgba(180, 140, 20, 0.45);
+}
+
+.stx-seg.stx-loading {
+  opacity: 0.55;
+}
+
+.stx-seg.stx-error {
+  background: rgba(220, 60, 60, 0.15);
+}
+
+.stx-ctls {
+  white-space: nowrap;
+}
+
+.stx-btn {
+  all: unset;
+  display: inline-block;
+  margin-left: 0.35em;
+  padding: 0 0.35em;
+  font: 600 0.72em/1.5 system-ui, sans-serif;
+  color: #5b4bd6;
+  background: rgba(91, 75, 214, 0.10);
+  border: 1px solid rgba(91, 75, 214, 0.35);
+  border-radius: 1em;
+  cursor: pointer;
+  vertical-align: baseline;
+}
+
+.stx-btn:hover {
+  background: rgba(91, 75, 214, 0.22);
+}

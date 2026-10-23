@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Stretchtext manual test fixture</title>
+<style>
+  body { font-family: Georgia, serif; max-width: 680px; margin: 40px auto; padding: 0 20px; line-height: 1.65; }
+  h1 { font-size: 26px; }
+  .note { font-family: system-ui, sans-serif; font-size: 13px; background: #f2f0ff; border: 1px solid #d8d2ff; border-radius: 8px; padding: 10px 14px; }
+</style>
+</head>
+<body>
+<!--
+  Manual test page for the Stretchtext extension.
+
+  Serve this folder over localhost, e.g.:
+    python3 -m http.server 8931 --directory .
+  then open:
+    http://localhost:8931/test/fixture.html?stretchtext-demo=1
+
+  The extension auto-activates on this page (localhost + the demo flag).
+  Sentences with a dotted underline are stretchable. Click one to expand it,
+  use "more" to stretch further, "less" to step back, and click an expanded
+  sentence to collapse it. Expansions need a connected Pollinations key
+  (extension Options page) and spend a tiny amount of your own Pollen.
+-->
+<p class="note">Manual test fixture for the Stretchtext extension. Open with <b>?stretchtext-demo=1</b> on localhost and the extension activates by itself.</p>
+
+<article>
+  <h1>The Harbour at Low Tide</h1>
+
+  <p>The harbour at low tide is a different place from the harbour everyone photographs. The water pulls back and leaves the boats resting on dark mud, tilted at odd angles like furniture in a room nobody uses anymore. Gulls pick through the exposed flats for crabs and shellfish. The whole basin smells of salt, diesel, and wet rope, and the sounds carry further than they should.</p>
+
+  <p>For the people who work the boats, the tide table is not information but instruction. It decides when nets are mended, when the ice is loaded, and when a crew can finally go home. A skipper who misreads the table by an hour can spend the night waiting for water that is not coming. The older fishermen say the tide keeps the honest schedule, and everyone else just tries to keep up with it.</p>
+
+  <p>The town grew around this rhythm over two centuries. Shops opened when the fleet was in and closed early when it was not, and the bakery still times its second batch of bread for the afternoon landing. Even the school once adjusted its terms around the herring season, though nobody under forty remembers that now. What remains is a habit of checking the water before making plans.</p>
+
+  <p>Visitors usually arrive at high tide, when the basin is full and the boats sit upright and photogenic. They rarely see the mud, the tilt, or the gulls working the flats below the quay. The harbour keeps its working face for the early hours. Anyone willing to be there at dawn gets the honest version for free.</p>
+</article>
+
+</body>
+</html>

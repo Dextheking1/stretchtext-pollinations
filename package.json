@@ -1,0 +1,12 @@
+{
+  "name": "stretchtext-pollinations",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Browser extension that turns any web page into stretchtext, powered by Pollinations.",
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "devDependencies": {
+    "jsdom": "^30.1.3"
+  }
+}

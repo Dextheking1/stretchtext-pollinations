@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Stretchtext</title>
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body class="popup">
+  <h1>Stretchtext</h1>
+  <p class="muted">Click a marked sentence on the page and it grows in place.</p>
+
+  <p>Pollinations: <span class="status" id="connState">checking...</span></p>
+
+  <div class="row">
+    <button id="toggleBtn" disabled>Enable on this page</button>
+  </div>
+  <p class="muted" id="toggleNote"></p>
+
+  <div class="row">
+    <label>
+      <input type="checkbox" id="siteOff">
+      Disable Stretchtext on <span id="siteHost">this site</span>
+    </label>
+  </div>
+
+  <div class="row">
+    <button class="secondary" id="optionsBtn">Options</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

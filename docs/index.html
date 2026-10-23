@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stretchtext, powered by Pollinations — install</title>
+<style>
+  :root { color-scheme: light dark; --accent: #5b4bd6; }
+  body { font-family: system-ui, -apple-system, sans-serif; max-width: 720px; margin: 0 auto; padding: 32px 20px 64px; line-height: 1.6; }
+  h1 { font-size: 30px; margin-bottom: 4px; }
+  h2 { margin-top: 36px; }
+  .tagline { font-size: 17px; opacity: 0.85; margin-top: 0; }
+  code { background: rgba(128,128,128,0.18); padding: 1px 6px; border-radius: 6px; }
+  ol li { margin: 6px 0; }
+  img.shot { width: 100%; border: 1px solid rgba(128,128,128,0.4); border-radius: 10px; }
+  a { color: var(--accent); }
+  .badge { margin-top: 40px; }
+</style>
+</head>
+<body>
+  <h1>Stretchtext</h1>
+  <p class="tagline">Turn any article into stretchtext. Click a sentence and it grows in place.</p>
+
+  <p>Stretchtext is an idea from 1967 (Ted Nelson): text that grows where the reader wants more and shrinks back where they don't. This browser extension brings it to any web page. Sentences that can stretch get a dotted underline; click one and a fuller version replaces it, right where it stands. Click <b>more</b> to go deeper, <b>less</b> to step back.</p>
+
+  <p>Expansions are generated with <a href="https://pollinations.ai">Pollinations</a> and paid for with your own Pollen. The extension has no server and no key of its own.</p>
+
+  <h2>Install</h2>
+  <p>No store listing yet, so load it unpacked. It takes a minute:</p>
+  <ol>
+    <li>Download the source from the <a href="https://github.com/Dextheking1/stretchtext-pollinations">GitHub repository</a> (green <b>Code</b> button, <b>Download ZIP</b>) and unzip it.</li>
+    <li>Open <code>chrome://extensions</code> in Chrome or Edge, or <code>about:debugging</code> in Firefox.</li>
+    <li>Turn on <b>Developer mode</b> (Chrome/Edge).</li>
+    <li>Click <b>Load unpacked</b> and pick the unzipped folder (the one with <code>manifest.json</code> in it). Firefox: <b>Load Temporary Add-on</b>, pick <code>manifest.json</code>.</li>
+    <li>Pin the Stretchtext button to your toolbar.</li>
+  </ol>
+
+  <h2>Connect your Pollen</h2>
+  <ol>
+    <li>Open the extension's <b>Options</b> page.</li>
+    <li>Click <b>Connect with Pollinations</b> and approve on the Pollinations page that opens.</li>
+    <li>The approved key stays in your browser only. It has a budget and an expiry you control, and you can revoke it from your Pollinations dashboard at any time.</li>
+  </ol>
+
+  <h2>Use it</h2>
+  <p>Open any article, click the Stretchtext toolbar button (or press <code>Alt+Shift+S</code>), choose <b>Enable on this page</b>, then click a dotted sentence. Turning Stretchtext off restores the page exactly as it was.</p>
+
+  <h2>Privacy</h2>
+  <p>No tracking, no analytics. The extension only talks to <code>gen.pollinations.ai</code> (the sentence you clicked, its paragraph, your key) and <code>enter.pollinations.ai</code> (sign-in only).</p>
+
+  <p class="badge">
+    <a href="https://pollinations.ai/?ref=badge">
+      <img src="https://raw.githubusercontent.com/pollinations/pollinations/main/packages/ui/src/brand/badge-made-with.svg" alt="Made with pollinations.ai">
+    </a>
+  </p>
+</body>
+</html>
